@@ -1,0 +1,80 @@
+.contacts-page {
+    .banner {
+        &__description {
+            font-size: 14px;
+            line-height: 28px;
+            text-align: center;
+            color: #fff;
+            padding-top: 120px;
+            padding-bottom: 122px;
+            max-width: 830px;
+            margin: 0 auto;
+        }
+    }
+    .banner--bg {
+        background-image: url("../../../img/contacts/banner--bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: 332px;
+    }
+    .contacts {
+        margin-top: 100px;
+        &__title {
+            font-size: 30px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 32px;
+            color: #e1dece;
+        }
+        &__text span,
+        &__link {
+            font-size: 20px;
+            line-height: 32px;
+            color: #fefe;
+        }
+        &__wrapper {
+            display: flex;
+            gap: 0 75px;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-top: 115px;
+        }
+    }
+    .contacts-social {
+        &__title {
+            font-size: 30px;
+            line-height: 28px;
+        }
+        &__list {
+            display: flex;
+            gap: 0 25px;
+            align-items: center;
+            margin-top: 50px;
+        }
+        &__link img:hover {
+            filter: sepia(60%);
+        }
+    }
+    .contacts-info {
+        &__description {
+            font-size: 30px;
+            line-height: 42px;
+            max-width: 624px;
+            margin-bottom: 83px;
+        }
+        span {
+            display: inline-block;
+            font-family: "Segoe Script";
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 36px;
+            text-transform: capitalize;
+            max-width: 624px;
+        }
+    }
+}

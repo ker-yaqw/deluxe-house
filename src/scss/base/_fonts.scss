@@ -1,0 +1,42 @@
+@font-face {
+    font-weight: 900;
+    font-display: swap;
+    font-family: "Arial"; //Arial Black
+    src: url("/fonts/Arial/Arial-Black.woff") format("woff"),
+         url("/fonts/Arial/Arial-Black.woff2") format("woff2");
+}
+@font-face {
+    font-weight: 400;
+    font-display: swap;
+    font-family: "ArtifaktElement"; //ArtifaktElement Regular
+    src: url("/fonts/ArtifaktElement/ArtifaktElement-Regular.woff") format("woff"),
+         url("/fonts/ArtifaktElement/ArtifaktElement-Regular.woff2") format("woff2");
+}
+@font-face {
+    font-weight: 400;
+    font-display: swap;
+    font-family: "Garamond"; //Garamond Regular
+    src: url("/fonts/Garamond/Garamond Regular.woff") format("woff"),
+         url("/fonts/Garamond/Garamond Regular.woff2") format("woff2");
+}
+@font-face {
+    font-weight: 700;
+    font-display: swap;
+    font-family: "Garamond"; //Garamond Bold
+    src: url("/fonts/Garamond/Garamond Bold font.woff") format("woff"),
+         url("/fonts/Garamond/Garamond Bold font.woff2") format("woff2");
+}
+@font-face {
+    font-weight: 400;
+    font-display: swap;
+    font-family: "Gotham Pro"; //Gotham Pro Regular
+    src: url("/fonts/Gotham Pro/Gotham Pro Regular.woff") format("woff"),
+         url("/fonts/Gotham Pro/Gotham Pro Regular.woff2") format("woff2");
+}
+@font-face {
+    font-weight: 400;
+    font-display: swap;
+    font-family: "Segoe Script"; //Segoe Script Regular
+    src: url("/fonts/Segoe Script/segoescript.woff") format("woff"),
+         url("/fonts/Segoe Script/segoescript.woff2") format("woff2");
+}

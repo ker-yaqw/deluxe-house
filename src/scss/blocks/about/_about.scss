@@ -1,0 +1,188 @@
+.about-page {
+    .banner {
+        &__description {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #fff;
+            max-width: 470px;
+            margin: 0 auto;
+            padding-top: 130px;
+            padding-bottom: 102px;
+        }
+    }
+    .banner--bg {
+        background-image: url("../../../img/about/banner--bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: 332px;
+    }
+    .video {
+        margin: 80px 0;
+        .video-item {
+            &__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 595px;
+            }
+        }
+        .video-item--bg {
+            background-image: url("../../../img/about/video--bg.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 1170px;
+            height: 595px;
+        }
+    }
+    .about {
+        &__text {
+            font-size: 16px;
+            line-height: 26px;
+            color: #ffffff;
+        }
+    }
+    .projects {
+        margin-top: 120px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, (minmax(270px, 1fr)));
+            justify-items: center;
+            align-items: center;
+            gap: 30px 30px;
+        }
+    }
+    .project-item {
+        &__image {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 270px;
+            height: 478px;
+            position: relative;
+        }
+        &__image::before {
+            content: "";
+            width: 270px;
+            height: 478px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+        }
+    }
+    .project-item__image:hover.project-item__image::before {
+        content: "";
+        opacity: 1;
+    }
+    .project-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 75px;
+        &__link {
+            font-family: "Garamond";
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 57px;
+            color: #e1dece;
+            display: block;
+            width: 220px;
+            height: 62px;
+            text-align: center;
+            border: 1px solid #e1dece;
+            border-radius: 5px;
+        }
+        &__link:hover {
+            background: #e1dece;
+            border-radius: 5px;
+            color: #191919;
+        }
+        &__link:active {
+            background: #e1dece;
+            box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 5px;
+            color: #191919;
+        }
+    }
+
+    .accordion {
+        margin-top: 160px;
+        margin-bottom: 177px;
+        &__title {
+            width: 100%;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e1dece;
+            font-family: "Garamond";
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 45px;
+            text-align: center;
+            color: #e1dece;
+        }
+    }
+    .accordion-item {
+        margin-top: 30px;
+        margin-bottom: 46px;
+        width: 100%;
+        text-align: left;
+        background: transparent;
+        border: none;
+        outline: none;
+        position: relative;
+        &::after {
+            content: "";
+            background-image: url("../../../img/about/accordion-arrow.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 7px;
+            right: 15px;
+        }
+        &__title {
+            font-family: "Garamond";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 27px;
+            text-align: start;
+            color: #e1dece;
+        }
+        &__panel {
+            display: none;
+        }
+        &__text {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+    .accordion-item--active {
+        position: relative;
+        &::after {
+            transform: rotate(-180deg);
+            position: absolute;
+            top: 7px;
+            right: 15px;
+        }
+    }
+    .panel--active {
+        display: block;
+        transition: all .5s ease;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    @keyframes fade {
+        from {
+            opacity: 0.1;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}

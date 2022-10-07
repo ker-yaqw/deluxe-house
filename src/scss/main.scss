@@ -1,0 +1,21 @@
+@import './base/base';
+@import './base/fonts';
+@import './base/reset';
+@import './base/preloader';
+
+
+@import './blocks/header/_header';
+@import './blocks/index/index';
+@import './blocks/repair/repair';
+@import './blocks/about/about';
+@import './blocks/portfolio/portfolio';
+@import './blocks/blog/blog';
+@import './blocks/post/post';
+@import './blocks/contacts/contacts';
+@import './blocks/footer/_footer';
+@import './blocks/modal/modal';
+
+
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+@import '../../node_modules/aos/src/sass/aos.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');

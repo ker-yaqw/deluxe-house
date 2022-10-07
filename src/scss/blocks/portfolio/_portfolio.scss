@@ -1,0 +1,23 @@
+.portfolio-page {
+    .banner {
+        margin-bottom: 106px;
+        &__description {
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: #fff;
+            max-width: 625px;
+            margin: 0 auto;
+            padding-top: 72px;
+            padding-bottom: 67px;
+        }
+    }
+    .banner--bg {
+        background-image: url("../../../img/portfolio/banner--bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        max-width: 100%;
+        height: 332px;
+    }
+}
